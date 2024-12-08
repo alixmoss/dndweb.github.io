@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        JavaScript 7th Edition
+      Final Project
+
+      Die roller, etc
+      Author: Alix Burton
+      Date:   12/8
+
+      Filename: editions.html
+    
+    
+    
+    
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>D&D Editions</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="js/editions.js" defer></script>
+</head>
+<body>
+       <!-- navigation buttons-->
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="roller.html">Dice Roller</a>
+        <a href="editions.html">Editions</a>
+    </div>
+ 
+       <!-- header -->
+    <header>
+        <h1>D&D Editions</h1>
+    </header>
+
+       <!-- container for images of book covers-->
+    <article>
+        <h2>Choose an edition to learn more:</h2>
+        <img id="original"><img src=images/editions/originaledition.jpg alt="Cover of Original Edition of Dungeons and Dragons" usemap="workmap1"></img>
+        <img id="1e"><img src=images/editions/1stedition.jpg></img>
+        <img id="2e"><img src=images/editions/2ndedition.jpeg></img>
+        <img id="3e"><img src=images/editions/3rdedition.jpg></img>
+        <img id="3.5e"><img src=images/editions/3.5edition.png></img>
+        <img id="4e"><img src=images/editions/4thedition.jpg></img>
+        <img id="5e"><img src=images/editions/5thedition.jpg></img>
+    </article>
+    <article>
+           <!-- dropdown selector for books-->
+        <select name="books" id="books" onchange="displayText()">
+            <option value="" selected>Select a book</option>
+            <option value="original">Original Edition</option>
+            <option value="1e">First Edition</option>
+            <option value="2e">Second Edition</option>
+            <option value="3e">Third Edition</option>
+            <option value="3.5e">Revised Third Edition</option>
+            <option value="4e">Fourth Edition</option>
+            <option value="5e">Fifth Edition</option>
+        </select>
+           <!-- feedback display based on which edition selected-->
+        <p id="feedback"></p>
+    </article>
+       <!--footer -->
+    <footer>
+        <p>Created by Alix Moss for Adv Web Dev</p>
+        <p>Information gathered from Wikipedia</p>
+       </footer>
+</body>
+</html>

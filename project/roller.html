@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        JavaScript 7th Edition
+      Final Project
+
+      Die roller, etc
+      Author: Alix Burton
+      Date:   12/8
+
+      Filename: roller.html
+    
+    
+    
+    
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Die Roller</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="js/roller.js" defer></script>
+</head>
+<body>
+   
+   <!-- navigation buttons -->
+   <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="roller.html">Dice Roller</a>
+      <a href="editions.html">Editions</a>
+   </div>
+
+   <!-- header -->
+   <header>
+      <h1>Die Roller</h1>
+   </header>
+
+      <!-- container for dice images -->
+   <div id="dice">
+      <h2>Click a button to roll a die!</h2>
+      <img id="d20"><img src=images/dice/d20.png></img>
+      <img id="d12"><img src=images/dice/d12.png></img>
+      <img id="d10"><img src=images/dice/d10.png></img>
+      <img id="d8"><img src=images/dice/d8.png></img>
+      <img id="d6"><img src=images/dice/d6.png></img>
+      <img id="d4"><img src=images/dice/d4.png></img>
+   </div>
+
+   <!-- dice buttons -->
+   <div id="dicebuttons">
+      <button id="20roll">d20</button>
+      <button id="12roll">d12</button>
+      <button id="10roll">d10</button>
+      <button id="8roll">d8</button>
+      <button id="6roll">d6</button>
+      <button id="4roll">d4</button>
+
+   </div>
+
+      <!-- rolled die result -->
+   <div id="results">
+      <p id="total"></p>
+   </div>
+      <!-- clear button -->
+   <button id="clear">Clear</button>
+      <!-- footer -->
+   <footer>
+      <p>Created by Alix Moss for Adv Web Dev</p>
+     </footer>
+</body>
+</html>
